@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/Black & White Minimalist Elegant Photographer Portofolio Presentation.png";
 import { IoMdSearch } from "react-icons/io";
+import { FaCartShopping } from "react-icons/fa6";
 
 const NavBar = () => {
   return (
@@ -18,7 +19,7 @@ const NavBar = () => {
             </a>
           </div>
           {/* search bar and others */}
-          <div>
+          <div className="flex justify-between items-center gap-4 ">
             <div className="relative group hidden sm:block">
               <input
                 type="text"
@@ -27,12 +28,18 @@ const NavBar = () => {
               />
               <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
+            {/* odr button */}
+            <button
+              onClick={() => alert("Ordering not available yet")}
+              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200
+            text-white py-1 px-4 rounded-full flex items-center  gap-3 group"
+            >
+              <span className="group-hover:block hidden transition-all duration-200">
+                Oder
+              </span>
+              <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer " />
+            </button>
           </div>
-          {/* odr button */}
-          <button onClick={() => alert("Ordering not available yet")}
-          className="bg-gradiant-to-r from-primary to-secondary">
-            <span>Oder</span>
-          </button>
         </div>
       </div>
       {/* lower Navbar */}
