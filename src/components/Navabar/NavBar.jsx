@@ -70,7 +70,7 @@ const NavBar = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-primary dark:bg-next"
+                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-primary dark:bg-next dark:border-gray-500"
               />
               <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
@@ -117,7 +117,7 @@ const NavBar = () => {
                         {DropdownLink.map((data) => (
                             <li key={data.id}>
                                 <a href={data.link}
-                                className="inline-block w-full rounded-md p-2 hover:bg-primary/40"
+                                className="inline-block w-full rounded-md p-2 hover:bg-primary/40 dark:hover:bg-primary/90"
                                 >{data.name}
                                 </a>
                             </li>
