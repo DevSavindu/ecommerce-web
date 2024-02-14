@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Logo from "../../assets/Brown Bubble Chatting Mobile App Logo (9).png";
+import Logo from "../../assets/Blue and Gold Fashion Logo (1).png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";
@@ -57,13 +57,16 @@ const NavBar = () => {
       <div className="bg-primary/40 py-2">
         <div className="container flex justify-between items-center">
           <div>
-            <a
-              href="#"
-              className="font-bold text-2xl sm:text-3xl flex gap-2 text-gray-900 dark:text-white"
-            >
-              <img src={Logo} alt="" className="w-10 uppercase" />
-              SAJI Clothing
-            </a>
+          <a
+  href="#"
+  className="font-bold text-2xl sm:text-3xl flex gap-2 text-gray-900 dark:text-white"
+>
+  <img src={Logo} alt="" className="w-10 uppercase" />
+  <span className="font-serif">SAJI Clothing</span>
+</a>
+
+
+
           </div>
           {/* search bar and others */}
           <div className="flex justify-between items-center gap-4">
@@ -98,7 +101,7 @@ const NavBar = () => {
             {Menu.map((data)=>(
                     <li key={data.id}>
                         <a href={data.link}
-                        className="inline-block px-4 hover:text-secondary duration-300"
+                        className="inline-block px-4 hover:text-primary duration-300"
                         >{data.name}</a>
                     </li>
                 ))}

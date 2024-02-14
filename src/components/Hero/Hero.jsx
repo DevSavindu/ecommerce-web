@@ -1,7 +1,8 @@
 import React from "react";
-import Image1 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (1).png";
+import Image1 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (4).png";
 import image2 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (2).png";
 import image3 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post.png";
+import Slider from "react-slick";
 
 const ImageList = [
   {
@@ -33,10 +34,11 @@ const Hero = () => {
       <div className="h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z-9 "></div>
       {/* hero section */}
       <div className="container pb-8 sm:pb-0">
+        <Slider>
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* text */}
-            <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1  ">
+            <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10 ">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
                 Lorem Ipsum is simply dummy text
               </h1>
@@ -52,7 +54,7 @@ const Hero = () => {
             </div>
             {/* image */}
             <div className=" order-1 sm:order-2">
-              <div>
+              <div className="relative z-10">
                 <img
                   src={Image1}
                   alt=""
@@ -63,6 +65,8 @@ const Hero = () => {
             {/* text */}
           </div>
         </div>
+        </Slider>
+        
       </div>
     </div>
   );
