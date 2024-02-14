@@ -1,7 +1,7 @@
 import React from "react";
 import Image1 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (4).png";
-import image2 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (2).png";
-import image3 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post.png";
+import image2 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (5).png";
+import image3 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (6).png";
 import Slider from "react-slick";
 
 const ImageList = [
@@ -43,7 +43,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200">
+    <div className="relative overflow-hidden min-h-screen bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200">
       {/* bckgrnd pattern */}
       <div className="h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z-9 "></div>
       {/* hero section */}
@@ -67,15 +67,16 @@ const Hero = () => {
                   </div>
                 </div>
                 {/* image */}
-                <div className="order-1 sm:order-2">
-                  <div className="relative z-10">
-                    <img
-                      src={data.img}
-                      alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px]  sm:scale-125 object-contain mx-auto"
-                    />
-                  </div>
-                </div>
+                <div className="order-1 sm:order-2 flex justify-center">
+  <div className="relative z-10">
+    <img
+      src={data.img}
+      alt=""
+      className="w-[400px] h-auto sm:h-[500px] sm:w-[500px] object-contain mx-auto"
+    />
+  </div>
+</div>
+
                 {/* text */}
               </div>
             </div>
