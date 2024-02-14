@@ -1,14 +1,14 @@
 import React from "react";
 import Image1 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (4).png";
 import image2 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (5).png";
-import image3 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (6).png";
+import image3 from "../../assets/Yellow purple retro big sale discount shopping promotion.png";
 import Slider from "react-slick";
 
 const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 50% off on all Men's Wear",
+    title: "Upto 30% off on all Women's Wear",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
   },
@@ -22,7 +22,7 @@ const ImageList = [
   {
     id: 3,
     img: image3,
-    title: "Upto 50% off on all Men's Wear",
+    title: "70% off on all Products Sale",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
   },
@@ -72,7 +72,7 @@ const Hero = () => {
     <img
       src={data.img}
       alt=""
-      className="w-[400px] h-auto sm:h-[500px] sm:w-[500px] object-contain mx-auto"
+      className="w-[400px] h-auto sm:h-[500px] sm:w-[500px] object-contain mx-auto lg:scale-120"
     />
   </div>
 </div>
