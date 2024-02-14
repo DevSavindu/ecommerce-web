@@ -4,6 +4,7 @@ import Logo from "../../assets/Brown Bubble Chatting Mobile App Logo (9).png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";
+// eslint-disable-next-line no-unused-vars
 import { data } from "autoprefixer";
 
 const Menu = [
