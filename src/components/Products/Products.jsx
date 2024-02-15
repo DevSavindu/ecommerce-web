@@ -1,11 +1,11 @@
 import { data } from 'autoprefixer'
 import React from 'react'
 import {FaStar} from "react-icons/fa6"
-import img1 from "../../assets/women/happy-young-woman-shirt-with-shopping-bags.jpg"
+import img5 from "../../assets/women/happy-young-woman-shirt-with-shopping-bags.jpg"
 import img2 from "../../assets/women/lady-pink-suit-looking-camera.jpg"
 import img3 from "../../assets/women/surprised-woman-with-shopping-packets.jpg"
 import img4 from "../../assets/women/smiley-woman-with-earphones-shopping-bags.jpg"
-import img5 from "../../assets/women/brunette-woman-with-coffee-shopping-bags-shoulder.jpg"
+import img1 from "../../assets/women/brunette-woman-with-coffee-shopping-bags-shoulder.jpg"
 
 const ProductsData = [
     {
