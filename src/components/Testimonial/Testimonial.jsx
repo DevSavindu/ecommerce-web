@@ -1,4 +1,5 @@
 import React from 'react'
+import Slider from 'react-slick';
 
 const TestimonialData = [
 
@@ -7,7 +8,7 @@ const TestimonialData = [
         name: "Victor",
         text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto",
         img: ""
-    }
+    },
 ];
 
 const Testimonial = () => {
