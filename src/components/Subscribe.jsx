@@ -1,5 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import Banner from "../../assets/banner/Purple Minimalist Develop Your Mobile App With Us Medium Banner.png";
+import Banner from "../assets/banner/Purple Minimalist Develop Your Mobile App With Us Medium Banner.png";
 
 const BannerImg = {
     backgroundImage: `url(${Banner})`, // Changed single quotes to backticks for string interpolation
@@ -14,8 +15,9 @@ const Subscribe = () => {
   return (
     <div
       data-aos="zoom-in" // Corrected attribute name
-      className="mb-20 bg-gray-100 dark:bg-gray-800 text-white"
       style={BannerImg}
+      className="mb-20 bg-primary dark:bg-gray-800 text-white"
+      
     >
       <div className="container backdrop-blur-sm py-10">
         <div className='space-y-6 max-w-xl mx-auto'>

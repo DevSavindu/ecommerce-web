@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Logo from "../../assets/Blue and Gold Fashion Logo (1).png";
+import Logo from "../assets/banner/Blue and Gold Fashion Logo (1).png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";

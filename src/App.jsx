@@ -1,14 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import NavBar from "./components/Navabar/NavBar";
-import Hero from "./components/Hero/Hero";
-import Products from "./components/Products/Products";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import Products from "./components/Products";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TopProducts from "./components/TopProducts/TopProducts";
-import Banner from "./components/Banner/Banner";
-import Subscribe from "./components/Subscribe/Subscribe";
-import Testimonial from "./components/Testimonial/Testimonial";
+import TopProducts from "./components/TopProducts";
+import Banner from "./components/Banner";
+import Subscribe from "./components/Subscribe";
+import Testimonial from "./components/Testimonial";
+import Footer from "./components/Footer";
 
 const App = () => {
   React.useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
       <Subscribe />
       <Products />
       <Testimonial />
+      <Footer/>
     </div>
   );
 };

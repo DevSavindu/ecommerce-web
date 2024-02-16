@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import Image1 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (4).png";
-import image2 from "../../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (5).png";
-import image3 from "../../assets/Yellow purple retro big sale discount shopping promotion.png";
+import Image1 from "../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (4).png";
+import image2 from "../assets/Grey Black Modern Aesthetic Minimalist  Photo Collage Instagram Post (5).png";
+import image3 from "../assets/Yellow purple retro big sale discount shopping promotion.png";
 import Slider from "react-slick";
 
 const ImageList = [

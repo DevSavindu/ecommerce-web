@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import Img1 from "../../assets/shirts/Brown Bubble Chatting Mobile App Logo (12).png";
-import Img2 from "../../assets/shirts/Brown Bubble Chatting Mobile App Logo (11).png";
-import Img3 from "../../assets/shirts/Brown Bubble Chatting Mobile App Logo (13).png";
+import Img1 from "../assets/shirts/Brown Bubble Chatting Mobile App Logo (12).png";
+import Img2 from "../assets/shirts/Brown Bubble Chatting Mobile App Logo (11).png";
+import Img3 from "../assets/shirts/Brown Bubble Chatting Mobile App Logo (13).png";
 
 const ProductsData = [
   {

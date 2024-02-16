@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Slider from 'react-slick';
 
@@ -89,7 +90,7 @@ const Testimonial = () => {
           </p>
         </div>
         {/* Testimonial cards */}
-        <div>
+        <div data-aos="zoom-in">
           <Slider {...settings}>
             {TestimonialData.map((data) => (
               <div className='my-6' key={data.id}>

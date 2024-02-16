@@ -1,6 +1,6 @@
 import React from 'react';
-import Light from "../../assets/light-mode 1.png";
-import dark from "../../assets/night-mode.png";
+import Light from "../assets/light-mode 1.png";
+import dark from "../assets/night-mode.png";
 
 const DarkMode = () => {
     const [theme, setTheme] = React.useState(
