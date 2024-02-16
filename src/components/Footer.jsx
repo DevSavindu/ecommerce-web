@@ -1,6 +1,6 @@
 import React from 'react'
 import footerImg from '../assets/banner/Blue and Gold Fashion Logo (1).png'
-import Banner from '../assets/shirts/78791.jpg'
+import Banner from '../assets/shirts/saddddddd.jpg'
 
 const BannerImg = {
     backgroundImage: `url(${Banner})`, // Changed single quotes to backticks for string interpolation
@@ -50,7 +50,20 @@ const footer = () => {
             </div>
             {/* links */}
             <div className='grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10'>
-
+                <div>
+                    <div className='py-8 px-4'>
+                        <h1 className='sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3'>Important links</h1>
+                        <ul>
+                            {
+                                FooterLinks.map((link) => (
+                                    <li className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200' key={link.title}>
+                                        <span>{link.title}</span>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
       </div>
