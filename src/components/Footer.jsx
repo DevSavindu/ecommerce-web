@@ -42,8 +42,8 @@ const footer = () => {
         data-aos="zoom-in"
         className='grid md:grid-cols-3 pb-44 pt-5'>
             {/* company details */}
-            <div className='py-8 px-4'>
-                <h1 className="text-secondary  dark:text-white font-serif sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
+            <div className='py-8 px-4 '>
+                <h1 className="text-secondary hover:scale-105 duration-200  dark:text-white font-serif sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
                     <img src={footerImg} alt="" 
                     className='max-w-[50px]  shadow-sm p-1 rounded-full bg-primary  dark:bg-white '
                     />
@@ -88,13 +88,13 @@ const footer = () => {
                 <div>
                     <div className='flex items-center gap-3 mt-6 '>
                         <a href="#">
-                        <FaInstagram className='text-3xl  hover:dark:text-white hover:text-primary'/>
+                        <FaInstagram className='text-3xl  hover:dark:text-white hover:text-primary hover:scale-105 duration-200'/>
                         </a>
                         <a href="#">
-                            <FaFacebook className='text-3xl  hover:dark:text-white hover:text-primary'/>
+                            <FaFacebook className='text-3xl  hover:dark:text-white hover:text-primary hover:scale-105 duration-200'/>
                         </a>
                         <a href="#">
-                            <FaLinkedin className='text-3xl  hover:dark:text-white hover:text-primary'/>
+                            <FaLinkedin className='text-3xl  hover:dark:text-white hover:text-primary hover:scale-105 duration-200'/>
                         </a>
                     </div>
                     <div className='mt-6'>
