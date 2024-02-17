@@ -29,15 +29,18 @@ const App = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <NavBar handleOrderPopup={handleOrderPopup}/>
-      <Hero />
+      <Hero  handleOrderPopup={handleOrderPopup}/>
       <Products />
-      <TopProducts />
+      <TopProducts  handleOrderPopup={handleOrderPopup}/>
       <Banner />
       <Subscribe />
       <Products />
       <Testimonial />
       <Footer/>
       <Popup orderPopup={orderPopup} setOrderPopup= {setOrderPopup}/>
+      <div>
+      <p className=" mb-2 flex justify-center -pb-1 text-secondary">SavinduNawarathne@2024</p>
+      </div>
     </div>
   );
 };
