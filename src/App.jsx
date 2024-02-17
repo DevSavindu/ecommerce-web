@@ -38,9 +38,14 @@ const App = () => {
       <Testimonial />
       <Footer/>
       <Popup orderPopup={orderPopup} setOrderPopup= {setOrderPopup}/>
-      <div>
-      <p className=" mb-2 flex justify-center -pb-1 text-secondary">SavinduNawarathne@2024</p>
-      </div>
+      <div 
+        
+        className="text-center top-1/2  max-w- mx-auto">
+          <p className="text-sm text-secondary ">
+            SavinduNawarathne@2024
+          </p>
+      
+        </div>
     </div>
   );
 };
