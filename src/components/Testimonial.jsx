@@ -1,122 +1,87 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
-import Slider from 'react-slick';
-
-const TestimonialData = [
-  {
-    id: 1,
-    name: "Eran",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto",
-    img: "https://picsum.photos/101/101"
-  },
-  {
-    id: 2,
-    name: "Chandima",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto",
-    img: "https://picsum.photos/105/105"
-  },
-  {
-    id: 3,
-    name: "Dulsha Rulzz",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto",
-    img: "https://picsum.photos/102/102"
-  },
-  {
-    id: 4,
-    name: "Tenex",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto",
-    img: "https://picsum.photos/103/103"
-  },
-  {
-    id: 5,
-    name: "Mihisara",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto",
-    img: "https://picsum.photos/104/104"
-  },
-];
-
-const Testimonial = () => {
-  var settings = {
-    dots: true,
-    arrows: false,
-    infinite: true, // Corrected 'infinity' to 'infinite'
-    speed: 500,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-    pauseOnHover: true,
-    pauseOnFocus: true,
-    responsive: [
-      {
-        breakpoint: 10000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
+export default function Example() {
   return (
-    <div className='py-10 mb-10'>
-      <div className='container'>
-        {/* header */}
-        <div 
-        
-        className="text-center mb-10 max-w-[600px] mx-auto">
-          <p data-aos="fade-up" className="text-sm text-primary ">
-            What our customers are saying
-          </p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Testimonials
-          </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto
-          </p>
-        </div>
-        {/* Testimonial cards */}
-        <div data-aos="zoom-in">
-          <Slider {...settings}>
-            {TestimonialData.map((data) => (
-              <div className='my-6' key={data.id}>
-                <div className='flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/25 relative'>
-                  <div className='mb-4'>
-                    <img src={data.img} alt="" className='rounded-full w-20 h-20'/>
-                  </div>
-                  <div className='flex flex-col items-center gap-4'>
-                    <div className='space-y-3'>
-                      <p className='text-xs text-gray-500'>{data.text}</p>
-                      <h1 className='text-xl font-bold text-black/80 dark:text-light'>{data.name}</h1>
-                    </div>
-                  </div>
-                  <p className='text-black/20 text-9xl font-serif absolute top-0 right-0'>
-                    ,,
-                  </p>
-                </div>
-              </div>
-            ))}
-          </Slider>
+    <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
+      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+      <div className="mx-auto max-w-2xl lg:max-w-4xl">
+        <img className="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
+        <figure className="mt-10">
+          <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+            <p>
+              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
+              molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+            </p>
+          </blockquote>
+          <figcaption className="mt-10">
+            <img
+              className="mx-auto h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+              <div className="font-semibold text-gray-900">Judith Black</div>
+              <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
+                <circle cx={1} cy={1} r={1} />
+              </svg>
+              <div className="text-gray-600">CEO of Workcation</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  )
+}
+
+
+
+
+
+
+export default function Example() {
+  return (
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+          Trusted by the world’s most innovative teams
+        </h2>
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <img
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+            alt="Transistor"
+            width={158}
+            height={48}
+          />
+          <img
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+            alt="Reform"
+            width={158}
+            height={48}
+          />
+          <img
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+            alt="Tuple"
+            width={158}
+            height={48}
+          />
+          <img
+            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+            alt="SavvyCal"
+            width={158}
+            height={48}
+          />
+          <img
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+            alt="Statamic"
+            width={158}
+            height={48}
+          />
         </div>
       </div>
     </div>
-  );
+  )
 }
-
-export default Testimonial;
