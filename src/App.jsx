@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import TopProducts from "./components/TopProducts";
 import Banner from "./components/Banner";
 import Subscribe from "./components/Subscribe";
-// import Testimonial from "./components/Testimonial";
+import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import Popup from "./components/Popup"
 
@@ -35,7 +35,7 @@ const App = () => {
       <Banner />
       <Subscribe />
       <Products />
-      {/* <Testimonial /> */}
+      <Testimonial />
       <Footer/>
       <Popup orderPopup={orderPopup} setOrderPopup= {setOrderPopup}/>
       <div 
